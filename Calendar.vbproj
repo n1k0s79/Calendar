@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1B8A1488-7760-45DD-ADF1-614B5C405305}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Calendar.My.MyApplication</StartupObject>
+    <RootNamespace>Calendar</RootNamespace>
+    <AssemblyName>Calendar</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Calendar.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Calendar.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\Deployment\Program Files\TiSoft\Calendar\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="TiSoft.System">
+      <HintPath>..\..\Deployment\Program Files\TiSoft\Common\TiSoft.System.dll</HintPath>
+    </Reference>
+    <Reference Include="TiSoft.System.Collections">
+      <HintPath>..\..\Deployment\Program Files\TiSoft\Common\TiSoft.System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="TiSoft.System.ComponentModel">
+      <HintPath>..\..\Deployment\Program Files\TiSoft\Common\TiSoft.System.ComponentModel.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\Documents\Cell.vb">
+      <Link>Documents\Cell.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Documents\Cover.vb">
+      <Link>Documents\Cover.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Documents\Document.vb">
+      <Link>Documents\Document.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Documents\Element.vb">
+      <Link>Documents\Element.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Documents\FractionEquation.vb">
+      <Link>Documents\FractionEquation.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Documents\HeadersFooters.vb">
+      <Link>Documents\HeadersFooters.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Documents\Image.vb">
+      <Link>Documents\Image.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Documents\List.vb">
+      <Link>Documents\List.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Documents\Paragraph.vb">
+      <Link>Documents\Paragraph.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Documents\PDFConverter.vb">
+      <Link>Documents\PDFConverter.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Documents\PDFPage.vb">
+      <Link>Documents\PDFPage.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Documents\Row.vb">
+      <Link>Documents\Row.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Documents\RTFConverter.vb">
+      <Link>Documents\RTFConverter.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Documents\Section.vb">
+      <Link>Documents\Section.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Documents\Style.vb">
+      <Link>Documents\Style.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Documents\Symbols.vb">
+      <Link>Documents\Symbols.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Documents\Table.vb">
+      <Link>Documents\Table.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Documents\Template.vb">
+      <Link>Documents\Template.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Documents\TOC.vb">
+      <Link>Documents\TOC.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\ImageController.vb">
+      <Link>ImageController.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Lists.vb">
+      <Link>Lists.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\PDF\Concatenator.vb">
+      <Link>Documents\Concatenator.vb</Link>
+    </Compile>
+    <Compile Include="..\Common\Strings.vb">
+      <Link>Strings.vb</Link>
+    </Compile>
+    <Compile Include="CalendarMonth.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MyApplication_Folders.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
